@@ -1,0 +1,58 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styling container */
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Styling headings */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray color for headings */
+  }
+  
+  /* Styling form groups */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Styling labels */
+  label {
+    font-weight: bold;
+    color: #555; /* Dark gray color for labels */
+  }
+  
+  /* Styling form controls */
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray color for borders */
+    border-radius: 4px;
+    color: #333; /* Dark gray color for text */
+  }
+  
+  /* Styling select inputs */
+  select {
+    cursor: pointer;
+    background-color: #fff; /* White background for select inputs */
+  }
+  
+  /* Styling placeholder text in input */
+  ::placeholder {
+    color: #999; /* Gray color for placeholder text */
+  }
+  
+  /* Styling select options */
+  option {
+    color: #333; /* Dark gray color for select options text */
+    background-color: #fff; /* White background for select options */
+  }
+  
