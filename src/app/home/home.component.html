@@ -5,7 +5,7 @@
   <div class="form-group">
     <label for="regionMarket">Region/Market:</label>
     <select id="regionMarket" class="form-control">
-      <!-- Options for Region/Market will be dynamically populated -->
+      <option *ngFor="let market of marketsList">{{ market }}</option>
     </select>
   </div>
   
@@ -18,8 +18,9 @@
   <!-- Indicators Dropdown -->
   <div class="form-group">
     <label for="indicators">Indicators:</label>
-    <select id="indicators" class="form-control">
-      <option *ngFor="let indicator of indicatorsList" [value]="indicator.name">{{ indicator.name }}</option>
+    <select id="indicators" class="form-control" (change)="onSelectIndicator($event)">
+      <option value="">Select an indicator</option>
+      <option *ngFor="let indicator of indicatorsList" [value]="indicator._id">{{ indicator.name }}</option>
     </select>
   </div>
   
@@ -27,7 +28,7 @@
   <div class="form-group">
     <label for="subIndicators">Sub Indicators:</label>
     <select id="subIndicators" class="form-control">
-      <!-- Options for Sub Indicators will be dynamically populated -->
+      <option *ngFor="let subIndicator of subIndicatorsList">{{ subIndicator }}</option>
     </select>
   </div>
   
